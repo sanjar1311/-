@@ -1,0 +1,38 @@
+.button-white {
+  text-decoration: none;
+  color: $black;
+  border: 1px solid #DADEDF;
+  padding: 13px 25px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  margin: 0;
+}
+
+.button-white:hover {
+  color: #fff;
+  background-color: $black;
+  border: 1px solid $black;
+}
+
+.button-white:active {
+  opacity: 0.6;
+}
+
+.button-black {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid $black;
+  padding: 13px 25px;
+  border-radius: 4px;
+  background-color: $black;
+  margin: 0;
+}
+
+.button-black:hover {
+  color: $black;
+  background-color: #fff;
+}
+
+.button-black:active {
+  opacity: 0.6;
+}

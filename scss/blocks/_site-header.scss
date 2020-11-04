@@ -1,0 +1,21 @@
+
+.site-header__container {
+  max-width: 1420px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .site-header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 50;
+    box-shadow: 1px 1px 10px 1px #eee;
+  }
+}
