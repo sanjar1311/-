@@ -1,0 +1,18 @@
+
+.delivery__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.delivery__item {
+  max-width: 320px;
+}
+
+.delivery__item {
+  margin-right: 27px;
+}
+
+.delivery__item:nth-child(3n) {
+  margin-right: 0;
+}

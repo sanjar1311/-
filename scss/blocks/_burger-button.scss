@@ -1,0 +1,30 @@
+.burger {
+  background-color: transparent;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+
+.burger__open {
+  background-image: url("../../img/burger-open.svg");
+}
+
+.burger__close {
+  background-image: url("../../img/burger-close.svg");
+}
+
+@media only screen and (max-width: 768px) {
+
+  .burger__open {
+    display: block;
+    z-index: 50;
+  }
+
+  .nav-open .burger__close {
+    display: block;
+    z-index: 50;
+  }
+}

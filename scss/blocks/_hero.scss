@@ -17,7 +17,8 @@
 }
 
 .hero__buttons{
-  max-width: 350px;
+  display: flex;
+  justify-content: center;
   padding: 25px 0 ;
   margin-bottom: 88px;
   margin-left: auto;
@@ -27,7 +28,7 @@
 .hero__img{
   height: 422px;
   max-width: 1040px;
-  background-image: url("../../img/hero-bg.png");
+  background-image: url("../img/hero-bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   display: block;

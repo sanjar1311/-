@@ -410,9 +410,9 @@ img {
 }
 
 .container {
-  max-width: 1200px;
-  padding-left: 20px;
-  padding-right: 20px;
+  max-width: 1100px;
+  padding-left: 22px;
+  padding-right: 22px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -424,7 +424,7 @@ img {
   padding: 13px 25px;
   border-radius: 4px;
   background-color: #FFFFFF;
-  margin: 0;
+  margin: 0 8px;
 }
 
 .button-white:hover {
@@ -444,7 +444,7 @@ img {
   padding: 13px 25px;
   border-radius: 4px;
   background-color: #212B31;
-  margin: 0;
+  margin: 0 8px;
 }
 
 .button-black:hover {
@@ -474,6 +474,22 @@ img {
     z-index: 50;
     -webkit-box-shadow: 1px 1px 10px 1px #eee;
             box-shadow: 1px 1px 10px 1px #eee;
+  }
+}
+
+.logo {
+  width: 236px;
+  height: 44;
+  margin-right: auto;
+  vertical-align: middle;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    width: 200px;
+    z-index: 50;
   }
 }
 
@@ -522,56 +538,7 @@ img {
   color: #036FC7;
 }
 
-.order {
-  color: #72787D;
-  font-size: 16px;
-  line-height: 19px;
-  white-space: nowrap;
-  text-decoration: none;
-  padding: 9px 20px;
-  background-color: #212B31;
-  border: 1px solid #212B31;
-  color: #fff;
-  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
-  border-radius: 4px;
-}
-
-.order:hover {
-  color: #212B31;
-  background-color: #fff;
-}
-
-.burger {
-  background-color: transparent;
-  border: none;
-  width: 35px;
-  height: 35px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  display: none;
-}
-
-.burger__open {
-  background-image: url("../../img/burger-open.svg");
-}
-
-.burger__close {
-  background-image: url("../../img/burger-close.svg");
-}
-
 @media only screen and (max-width: 768px) {
-  .burger__open {
-    display: block;
-    z-index: 50;
-  }
-  .nav__list, .order {
-    display: none;
-  }
-  .nav-open .burger__close {
-    display: block;
-    z-index: 50;
-  }
   .nav-open .nav__list {
     display: block;
     position: absolute;
@@ -621,18 +588,57 @@ img {
   }
 }
 
-.logo {
-  width: 236px;
-  height: 44;
-  margin-right: auto;
-  vertical-align: middle;
-  margin-top: 26px;
-  margin-bottom: 26px;
+.order {
+  color: #72787D;
+  font-size: 16px;
+  line-height: 19px;
+  white-space: nowrap;
+  text-decoration: none;
+  padding: 9px 20px;
+  background-color: #212B31;
+  border: 1px solid #212B31;
+  color: #fff;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+  border-radius: 4px;
+}
+
+.order:hover {
+  color: #212B31;
+  background-color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
-  .logo {
-    width: 200px;
+  .nav__list, .order {
+    display: none;
+  }
+}
+
+.burger {
+  background-color: transparent;
+  border: none;
+  width: 35px;
+  height: 35px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: none;
+}
+
+.burger__open {
+  background-image: url("../../img/burger-open.svg");
+}
+
+.burger__close {
+  background-image: url("../../img/burger-close.svg");
+}
+
+@media only screen and (max-width: 768px) {
+  .burger__open {
+    display: block;
+    z-index: 50;
+  }
+  .nav-open .burger__close {
+    display: block;
     z-index: 50;
   }
 }
@@ -662,7 +668,12 @@ img {
 }
 
 .hero__buttons {
-  max-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 25px 0;
   margin-bottom: 88px;
   margin-left: auto;
@@ -672,7 +683,7 @@ img {
 .hero__img {
   height: 422px;
   max-width: 1040px;
-  background-image: url("../../img/hero-bg.png");
+  background-image: url("../img/hero-bg.png");
   background-position: center center;
   background-repeat: no-repeat;
   display: block;
@@ -682,5 +693,26 @@ img {
   .hero {
     padding: 150px 0;
   }
+}
+
+.delivery__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+}
+
+.delivery__item {
+  max-width: 320px;
+}
+
+.delivery__item {
+  margin-right: 27px;
+}
+
+.delivery__item:nth-child(3n) {
+  margin-right: 0;
 }
 /*# sourceMappingURL=styles.css.map */
