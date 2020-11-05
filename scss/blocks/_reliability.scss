@@ -1,0 +1,36 @@
+
+.reliability__title {
+  text-align: center;
+  color: $black;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 17px;
+}
+.reliability__text {
+  max-width: 857px;
+  text-align: center;
+  color: $grey;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reliability__list {
+  display: flex;
+  list-style: none;
+}
+
+.reliability__item:not(:last-child) {
+  margin-right: 33px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .reliability__list {
+    flex-direction: column;
+  }
+}

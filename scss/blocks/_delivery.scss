@@ -37,6 +37,26 @@
   margin-bottom: 33px;
 }
 
+.delivery__bottom-text {
+  color: $grey;
+  margin-bottom: 124px;
+}
+.delivery__bottom-text--yellowtext {
+  position: relative;
+  color: $black;
+}
+.delivery__bottom-text--yellowtext::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 12px;
+  background-color: #FFD042;
+  z-index: -1;
+}
+
 @media only screen and (max-width: 1150px) {
 
   .delivery__list {

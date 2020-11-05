@@ -736,6 +736,28 @@ img {
   margin-bottom: 33px;
 }
 
+.delivery__bottom-text {
+  color: #72787D;
+  margin-bottom: 124px;
+}
+
+.delivery__bottom-text--yellowtext {
+  position: relative;
+  color: #212B31;
+}
+
+.delivery__bottom-text--yellowtext::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 12px;
+  background-color: #FFD042;
+  z-index: -1;
+}
+
 @media only screen and (max-width: 1150px) {
   .delivery__list {
     -webkit-box-pack: center;
@@ -856,6 +878,117 @@ img {
   }
   .delivery-item__title {
     text-align: center;
+  }
+}
+
+.reliability__title {
+  text-align: center;
+  color: #212B31;
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 17px;
+}
+
+.reliability__text {
+  max-width: 857px;
+  text-align: center;
+  color: #72787D;
+  font-size: 20px;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reliability__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.reliability__item:not(:last-child) {
+  margin-right: 33px;
+}
+
+@media only screen and (max-width: 768px) {
+  .reliability__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.reliability-item {
+  max-width: 332px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reliability-item__heading {
+  text-align: center;
+  color: #212B31;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.reliability-item__text {
+  color: #72787D;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.reliability-item__1::before {
+  content: "";
+  display: block;
+  background-image: url("../img/reliability-1.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 48px;
+  width: 48px;
+}
+
+.reliability-item__2::before {
+  content: "";
+  display: block;
+  background-image: url("../img/reliability-2.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 48px;
+  width: 48px;
+}
+
+.reliability-item__3::before {
+  content: "";
+  display: block;
+  background-image: url("../img/reliability-3.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 48px;
+  width: 48px;
+}
+
+@media only screen and (max-width: 768px) {
+  .reliability-item {
+    max-width: 100%;
+    margin-bottom: 50px;
+  }
+  .reliability-item__heading {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
