@@ -810,13 +810,48 @@ img {
   display: block;
   width: 48px;
   height: 48px;
-  background-image: url("../img/Frame.svg");
   background-repeat: no-repeat;
   background-position: center center;
   margin-left: -15px;
 }
 
-.delivery-item__title {
+.delivery-item--concrete::before {
+  background-image: url("../img/concrete.svg");
+}
+
+.delivery-item--wasteremoval::before {
+  background-image: url("../img/wasteremoval.svg");
+}
+
+.delivery-item--formwork::before {
+  background-image: url("../img/Formwork.svg");
+}
+
+.delivery-item--precasts::before {
+  background-image: url("../img/Precasts.svg");
+}
+
+.delivery-item--facades::before {
+  background-image: url("../img/Facades.svg");
+}
+
+.delivery-item--fit-out::before {
+  background-image: url("../img/Fit-out.svg");
+}
+
+.delivery-item--scaffolding::before {
+  background-image: url("../img/Scaffolding.svg");
+}
+
+.delivery-item--frame::before {
+  background-image: url("../img/Frame.svg");
+}
+
+.delivery-item--mep::before {
+  background-image: url("../img/MEP.svg");
+}
+
+.delivery-item__title::before {
   color: #212B31;
   font-size: 18px;
   line-height: 24px;
@@ -1047,6 +1082,8 @@ img {
   padding: 13px 25px;
   border-radius: 4px;
   margin: 0 8px;
+  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
 }
 
 .button--white {
