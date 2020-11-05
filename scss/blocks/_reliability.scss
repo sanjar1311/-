@@ -1,5 +1,6 @@
 
 .reliability__title {
+  position: relative;
   text-align: center;
   color: $black;
   font-size: 32px;
@@ -7,6 +8,18 @@
   font-weight: normal;
   margin: 0;
   margin-bottom: 17px;
+}
+.reliability__title::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: calc(50% + 90px);
+  display: block;
+  width: 42px;
+  height: 40px;
+  background-image: url(../img/leaf.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .reliability__text {
   max-width: 857px;

@@ -882,6 +882,7 @@ img {
 }
 
 .reliability__title {
+  position: relative;
   text-align: center;
   color: #212B31;
   font-size: 32px;
@@ -889,6 +890,19 @@ img {
   font-weight: normal;
   margin: 0;
   margin-bottom: 17px;
+}
+
+.reliability__title::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: calc(50% + 90px);
+  display: block;
+  width: 42px;
+  height: 40px;
+  background-image: url(../img/leaf.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .reliability__text {
@@ -950,6 +964,7 @@ img {
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  margin-bottom: 62px;
 }
 
 .reliability-item__1::before {
@@ -989,6 +1004,74 @@ img {
   }
   .reliability-item__heading {
     margin-bottom: 0;
+  }
+}
+
+.constructions {
+  background-color: #F6F8F9;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.constructions__text {
+  color: #212B31;
+  font-size: 18px;
+  line-height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  margin: 0;
+}
+
+.constructions__text::before {
+  content: "";
+  display: block;
+  width: 38px;
+  height: 36px;
+  background-image: url("../../img/constructions-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-right: 27px;
+}
+
+@media only screen and (max-width: 1160px) {
+  .constructions {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .constructions__text {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .constructions {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .constructions__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .constructions__text::before {
+    margin-bottom: 15px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
