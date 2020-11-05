@@ -9,11 +9,11 @@
 }
 
 .burger__open {
-  background-image: url("../../img/burger-open.svg");
+  background-image: url("../img/burger-open.svg");
 }
 
 .burger__close {
-  background-image: url("../../img/burger-close.svg");
+  background-image: url("../img/burger-close.svg");
 }
 
 @media only screen and (max-width: 768px) {
@@ -23,7 +23,7 @@
     z-index: 50;
   }
 
-  .nav-open .burger__close {
+  .site-header__open .burger__close {
     display: block;
     z-index: 50;
   }

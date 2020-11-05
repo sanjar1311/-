@@ -20,7 +20,7 @@
   margin-bottom: 62px;
 }
 
-.reliability-item__1::before {
+.reliability-item--1::before {
   content: "";
   display: block;
   background-image: url("../img/reliability-1.svg");
@@ -30,7 +30,7 @@
   width: 48px;
 }
 
-.reliability-item__2::before {
+.reliability-item--2::before {
   content: "";
   display: block;
   background-image: url("../img/reliability-2.svg");
@@ -40,7 +40,7 @@
   width: 48px;
 }
 
-.reliability-item__3::before {
+.reliability-item--3::before {
   content: "";
   display: block;
   background-image: url("../img/reliability-3.svg");
@@ -59,5 +59,9 @@
 
   .reliability-item__heading {
     margin-bottom: 0;
+  }
+
+  .reliability-item__text {
+    text-align: center;
   }
 }

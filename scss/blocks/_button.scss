@@ -1,39 +1,41 @@
 
-.button-white {
+.button {
   text-decoration: none;
-  color: $black;
-  border: 1px solid #DADEDF;
   padding: 13px 25px;
   border-radius: 4px;
-  background-color: #FFFFFF;
   margin: 0 8px;
 }
 
-.button-white:hover {
+.button--white {
+  color: $black;
+  border: 1px solid #DADEDF;
+  background-color: #FFFFFF;
+}
+
+.button--white:hover {
   color: #fff;
   background-color: $black;
   border: 1px solid $black;
 }
 
-.button-white:active {
+.button--white:active {
   opacity: 0.6;
 }
 
-.button-black {
-  text-decoration: none;
+
+
+
+.button--black {
   color: #fff;
   border: 1px solid $black;
-  padding: 13px 25px;
-  border-radius: 4px;
   background-color: $black;
-  margin: 0 8px;
 }
 
-.button-black:hover {
+.button--black:hover {
   color: $black;
   background-color: #fff;
 }
 
-.button-black:active {
+.button--black:active {
   opacity: 0.6;
 }
