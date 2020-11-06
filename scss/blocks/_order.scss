@@ -1,0 +1,20 @@
+.order__heading {
+  text-align: center;
+  font-size: 32px;
+  line-height: 48px;
+  max-width: 781px;
+  font-weight: normal;
+  color: $black;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 160px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .order__heading {
+    margin-top: 70px;
+    margin-bottom: 80px;
+  }
+}

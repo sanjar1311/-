@@ -1,6 +1,6 @@
 .disorder  {
   height: 600px;
-  background-image: url("../img/disorder-section.png");
+  background-image: url("../img/chaos-section.png");
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 344px;
@@ -58,6 +58,19 @@
   }
 }
 
+@media only screen and (max-width: 400px) {
+
+  .disorder__heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .disorder__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
 @media only screen and (max-width: 370px) {
 
   .disorder {
@@ -83,7 +96,7 @@ only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
 
-  .disorder {
+/*   .disorder {
     background-image: url("../img/disorder-section@2x.png");
-  }
+  } */
 }

@@ -1,0 +1,137 @@
+.order-box {
+  background-image: url("../img/order-box-bg.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  margin-bottom: 71px;
+  padding-bottom: 75px;
+}
+
+.order-box__title {
+  font-weight: normal;
+  color: $black;
+  font-size: 32px;
+  line-height: 48px;
+  max-width: 542px;
+}
+
+.order-box__text {
+  font-size: 20px;
+  line-height: 32px;
+  color: $grey;
+  max-width: 542px;
+}
+
+.order-box__gold-text {
+  position: relative;
+  color: $black;
+  display: inline-block;
+}
+
+.order-box__gold-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 12px;
+  background-color: #FFD042;
+  z-index: -1;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .order-box__title {
+    max-width: 450px;
+  }
+
+  .order-box__text {
+    max-width: 450px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .order-box {
+    background-position: right top;
+    background-size: 380px auto;
+  }
+
+  .order-box__title {
+    font-size: 28pxpx;
+    max-width: 400px;
+  }
+
+  .order-box__text {
+    font-size: 18px;
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .order-box {
+    background-position: bottom center;
+    background-size: 380px auto;
+    padding-bottom: 350px;
+    margin-bottom: 150px;
+  }
+
+  .order-box__title {
+    font-size: 28px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .order-box__text {
+    font-size: 18px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .order-box__gold-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  .order-box {
+    background-size: 300px auto;
+    padding-bottom: 280px;
+    margin-bottom: 100px;
+  }
+
+  .order-box__title {
+    font-size: 24px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .order-box__text {
+    font-size: 16px;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .order-box__gold-text {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+/*   .order-box {
+    background-image: url("../img/order-box-bg@2x.png");
+  } */
+}
