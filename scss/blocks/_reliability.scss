@@ -35,6 +35,7 @@
 .reliability__list {
   display: flex;
   list-style: none;
+  padding: 0;
 }
 
 .reliability__item:not(:last-child) {
@@ -45,5 +46,9 @@
 
   .reliability__list {
     flex-direction: column;
+  }
+
+  .reliability__item:not(:last-child) {
+    margin-right: 0;
   }
 }

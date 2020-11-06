@@ -1,4 +1,4 @@
-.order {
+.order-link {
   color: $grey;
   font-size: 16px;
   line-height: 19px;
@@ -10,16 +10,17 @@
   color: #fff;
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.16);
   border-radius: 4px;
+  transition: background-color .4s ease;
 }
 
-.order:hover {
+.order-link:hover {
   color: $black;
   background-color: #fff;
 }
 
 @media only screen and (max-width: 768px) {
 
-  .nav__list, .order{
+  .nav__list, .order-link{
     display: none;
   }
 }

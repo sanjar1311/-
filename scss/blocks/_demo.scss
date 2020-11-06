@@ -1,0 +1,34 @@
+.demo {
+  padding: 140px 0 140px 0;
+}
+
+.demo__list {
+  display: flex;
+  list-style-type: none;
+}
+
+.demo__item {
+  max-width: 325px;
+}
+
+.demo__item:not(:last-child){
+  margin-right: 41px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .demo {
+    padding: 0;
+  }
+
+  .demo__list {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .demo__item {
+    margin-bottom: 80px;
+    max-width: 100%;
+  }
+}

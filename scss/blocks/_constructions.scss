@@ -1,16 +1,17 @@
 .constructions {
-  background-color: #F6F8F9;
-  padding: 40px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
+  background-color: #F6F8F9;
+  padding: 40px;
 }
 .constructions__text {
+  display: flex;
+  align-items: center;
   color: $black;
   font-size: 18px;
   line-height: 32px;
-  display: flex;
-  align-items: center;
   margin-right: 20px;
   margin: 0;
 }
@@ -18,7 +19,7 @@
 .constructions__text::before {
   content: "";
   display: block;
-  width: 38px;
+  min-width: 38px;
   height: 36px;
   background-image: url("../img/constructions-icon.svg");
   background-repeat: no-repeat;
@@ -29,16 +30,7 @@
 @media only screen and (max-width: 1160px) {
 
   .constructions {
-    justify-content: center;
-  }
-  .constructions__text {
-    margin-bottom: 30px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-
-  .constructions {
+    flex-direction: column;
     justify-content: center;
   }
   .constructions__text {
@@ -48,5 +40,6 @@
   }
   .constructions__text::before {
     margin-bottom: 15px;
+    margin-right: 0;
   }
 }

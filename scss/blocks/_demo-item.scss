@@ -1,0 +1,42 @@
+.demo-item {
+  position: relative;
+}
+
+.demo-item::before {
+  position: absolute;
+  top: -55px;
+  left: calc(50% - 24px);
+  content: "";
+  display: block;
+  width: 48px;
+  height: 48px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.demo-item--efficiency::before {
+  background-image: url("../img/efficiency.svg");
+}
+
+.demo-item--losses::before {
+  background-image: url("../img/losses.svg");
+}
+
+.demo-item--security::before {
+  background-image: url("../img/security.svg");
+}
+
+.demo-item__heading {
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+  text-align: center;
+  font-weight: normal;
+}
+
+.demo-item__text {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: $grey;
+}
