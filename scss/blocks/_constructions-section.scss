@@ -1,4 +1,8 @@
-.constructions {
+.constructions-section {
+  margin-bottom: 144px;
+}
+
+.constructions-section__construction {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -6,7 +10,7 @@
   background-color: #F6F8F9;
   padding: 40px;
 }
-.constructions__text {
+.constructions-section__construction__text {
   display: flex;
   align-items: center;
   color: $black;
@@ -16,12 +20,12 @@
   margin: 0;
 }
 
-.constructions__text::before {
+.constructions-section__construction__text::before {
   content: "";
   display: block;
   min-width: 38px;
   height: 36px;
-  background-image: url("../img/constructions-icon.svg");
+  background-image: url("../img/constructions-section__construction-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
   margin-right: 27px;
@@ -29,16 +33,16 @@
 
 @media only screen and (max-width: 1160px) {
 
-  .constructions {
+  .constructions-section__construction {
     flex-direction: column;
     justify-content: center;
   }
-  .constructions__text {
+  .constructions-section__construction__text {
     flex-direction: column;
     text-align: center;
     margin-bottom: 30px;
   }
-  .constructions__text::before {
+  .constructions-section__construction__text::before {
     margin-bottom: 15px;
     margin-right: 0;
   }
@@ -46,11 +50,11 @@
 
 @media only screen and (max-width: 400px) {
 
-  .constructions__text {
+  .constructions-section__construction__text {
     font-size: 24px;
     line-height: 30px;
   }
-  .constructions__text {
+  .constructions-section__construction__text {
     font-size: 16px;
     line-height: 24px;
   }
