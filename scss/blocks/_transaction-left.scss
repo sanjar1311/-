@@ -78,6 +78,20 @@
   }
 }
 
+@media only screen and (max-width: 320px) {
+
+  .transaction-left::after {
+    max-width: 250px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+
+  .transaction-left::after {
+    max-width: 200px;
+  }
+}
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),

@@ -1,0 +1,61 @@
+.optimize {
+  border-radius: 6px;
+  margin-bottom: 150px;
+}
+
+.optimize__container {
+  padding: 117px 0;
+  background-image: url("../img/hero-bg.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #FFD042;
+}
+
+.optimize__title {
+  font-size: 48px;
+  line-height: 64px;
+  font-weight: 500;
+  color: $black;
+  text-align: center;
+}
+
+.optimize__buttons {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .optimize__title {
+    font-size: 36px;
+    line-height: 48px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  .optimize__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .optimize__container {
+    padding: 70px 0;
+  }
+}
+
+@media only screen and (max-width: 323px) {
+
+  .optimize__title {
+    padding: 0 15px;
+    font-size: 20px;
+   }
+
+  .optimize__buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+}
