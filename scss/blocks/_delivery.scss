@@ -145,13 +145,17 @@
 
 @media only screen and (max-width: 1150px) {
 
-.delivery__heading {
-  font-size: 24px;
-  line-height: 32px;
-}
+  .delivery__heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
 
-.delivery__text {
-  font-size: 16px;
-  line-height: 24px;
-}
+  .delivery__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .delivery__list {
+    padding: 0;
+  }
+
 }
