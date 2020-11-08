@@ -7,7 +7,7 @@
 }
 
 .order-box__title {
-  font-weight: normal;
+  font-weight: 500;
   color: $black;
   font-size: 32px;
   line-height: 48px;
@@ -19,12 +19,14 @@
   line-height: 32px;
   color: $grey;
   max-width: 542px;
+  font-weight: 400;
 }
 
 .order-box__gold-text {
   position: relative;
   color: $black;
   display: inline-block;
+  font-weight: 400;
 }
 
 .order-box__gold-text::before {

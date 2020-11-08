@@ -1,0 +1,13 @@
+.feature-bottom__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (max-width:768px) {
+
+  .feature-bottom__list {
+    flex-direction: column;
+  }
+}

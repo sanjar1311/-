@@ -1,0 +1,59 @@
+.feature-info {
+  max-width: 340px;
+  margin-right: 18px;
+
+  &::before {
+    content: "";
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 48px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.feature-info__heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.feature-info__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+}
+
+.feature-info--subcontractor::before {
+  background-image: url("../img/subcontractor.svg");
+}
+
+.feature-info--suppliers::before {
+  background-image: url("../img/suppliers.svg");
+}
+
+.feature-info--conformity::before {
+  background-image: url("../img/conformity.svg");
+}
+
+@media only screen and (max-width: 768px) {
+
+  .feature-info {
+    max-width: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+}

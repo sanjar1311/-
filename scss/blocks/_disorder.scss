@@ -10,7 +10,7 @@
 .disorder__heading {
   font-size: 32px;
   line-height: 48px;
-  font-weight: normal;
+  font-weight: 500;
   color: $black;
   text-align: center;
 }
@@ -20,6 +20,7 @@
   line-height: 32px;
   color: $grey;
   text-align: center;
+  font-weight: 400;
 }
 
 @media only screen and (max-width: 1400px) {

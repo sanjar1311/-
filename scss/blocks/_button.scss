@@ -51,6 +51,31 @@
   outline: 3px solid gold;
 }
 
+
+    // button-black-white-border
+.button--black-white-border {
+  color: #fff;
+  border: 1px solid $black;
+  background-color: $black;
+  border: 2px solid #fff;
+  padding: 11px 18px;
+}
+
+.button--black-white-border:hover {
+  color: $black;
+  background-color: #fff;
+}
+
+.button--black-white-border:active {
+  opacity: 0.6;
+}
+
+.button--black-white-border:focus {
+  outline: 3px solid gold;
+}
+
+
+
 @media only screen and(max-width: 400px) {
 
   .button {

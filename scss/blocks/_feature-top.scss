@@ -1,0 +1,42 @@
+.feature-top{
+  display: flex;
+  margin-bottom: 127px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 618px;
+    height: 413px;
+    background-image: url("../img/feature-bg.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .feature-top__list {
+    max-width: 600px;
+    list-style-type: none;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media only screen and(max-width: 1000px) {
+
+  .feature-top {
+
+    &::after {
+      width: 400px;
+    }
+  }
+}
+
+@media only screen and(max-width: 768px) {
+
+  .feature-top{
+
+    &::after {
+      display: none;
+    }
+  }
+}
