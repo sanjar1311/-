@@ -1,0 +1,33 @@
+.transaction {
+  margin-bottom: 96px ;
+}
+
+.transaction__container {
+  display: flex;
+}
+
+.transaction__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .transaction__container {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 329px) {
+
+  .transaction__buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    text-align: center;
+  }
+}

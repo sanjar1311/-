@@ -2,16 +2,16 @@
   background-color: $black;
   color: #fff;
   padding: 143px 0 118px 0;
+  margin-bottom: 143px;
 }
 
 @media only screen and (max-width: 331px) {
 
   .features__buttons {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 25px 0 ;
-    margin-left: auto;
-    margin-right: auto;
+    flex-direction: column;
+  }
+  .features {
+    margin-bottom: 100px;
   }
 }

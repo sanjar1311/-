@@ -1,0 +1,92 @@
+.transaction-left {
+  max-width: 462px;
+}
+
+.transaction-left::after {
+  width: 336px;
+  height: 392px;
+  display: block;
+  content: "";
+  background-image: url("../img/transaction.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-top: 60px;
+}
+
+.transaction-left__heading {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: $black;
+}
+
+.transaction-left__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: $grey;
+}
+
+@media only screen and (max-width: 900px) {
+
+  .transaction-left {
+    max-width: 320px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .transaction-left {
+    max-width: 100%;
+  }
+
+  .transaction-left__heading {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .transaction-left__text {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+
+.transaction-left::after {
+  margin-left: auto;
+  margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+
+  .transaction-left::after {
+    width: 300px;
+  }
+
+  .transaction-left__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .transaction-left__text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .transaction-left::after {
+    background-image: url("../img/transaction@2x.png");
+  }
+}

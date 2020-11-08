@@ -1,0 +1,30 @@
+.transaction-right {
+  max-width: 520px;
+  margin-left: auto;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+  .transaction-right {
+    max-width: 420px;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .transaction-right {
+    max-width: 350px;
+    margin-left: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .transaction-right {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

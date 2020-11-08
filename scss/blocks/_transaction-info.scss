@@ -1,0 +1,72 @@
+.transaction-info__title {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+.transaction-info__text {
+  font-size: 16px;
+  line-height: 24px;
+  color: $grey;
+  font-weight: 400;
+}
+
+.transaction-info {
+  position: relative;
+}
+
+.transaction-info::before {
+  position: absolute;
+  top: 20px;
+  left: -72px;
+  display: block;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #72787D;
+  font-size: 16px;
+  font-weight: 400;
+  border: 1px solid #DADEDF;
+  text-align: center;
+  display: flex;
+}
+
+.transaction-info--1::before {
+  content: "1";
+}
+
+.transaction-info--2::before {
+  content: "2";
+}
+
+.transaction-info--3::before {
+  content: "3";
+}
+
+.transaction-info--4::before {
+  content: "4";
+}
+
+@media only screen and (max-width: 768px) {
+
+  .transaction-info {
+    margin: 20px 0 30px 0;
+    text-align: center;
+  }
+
+  .transaction-info::before {
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .transaction-info__title {
+    text-align: center;
+  }
+
+  .transaction-info__text {
+    text-align: center;
+  }
+}

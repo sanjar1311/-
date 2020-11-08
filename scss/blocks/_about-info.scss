@@ -45,6 +45,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../img/tracking.png");
+  background-size: contain;
 }
 
 .about-info__optimization::after {
@@ -54,6 +55,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../img/optimization.png");
+  background-size: contain;
 }
 
 .about-info__real-time::after {
@@ -63,6 +65,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-image: url("../img/real-time.png");
+  background-size: contain;
 }
 
 @media only screen and (max-width: 950px) {
@@ -96,5 +99,27 @@
   .about-info__description {
     max-width: 100%;
     text-align: center;
+  }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .about-info__tracking::after {
+
+    background-image: url("../img/tracking@2x.png");
+  }
+
+  .about-info__optimization::after {
+    background-image: url("../img/optimization@2x.png");
+  }
+
+  .about-info__real-time::after {
+    background-image: url("../img/real-time@2x.png");
   }
 }
