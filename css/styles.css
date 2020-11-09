@@ -2336,6 +2336,25 @@ img {
   background-position: center center;
 }
 
+.article-right__user2-info {
+  position: relative;
+}
+
+.article-right__user2-info::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/vadim.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  border-radius: 50%;
+}
+
 .article-right__user-name {
   font-weight: 500;
   color: #212B31;
@@ -2366,19 +2385,66 @@ img {
 
 .article-right__buttons--left-btn {
   position: absolute;
-  bottom: calc(3%);
-  left: calc(15% + 5px);
+  bottom: calc(5%);
+  left: calc(15%);
   z-index: 10;
 }
 
 .article-right__buttons--right-btn {
   position: absolute;
-  bottom: calc(3%);
-  left: calc(15% + 21px);
+  bottom: calc(5%);
+  left: calc(15% + 40px);
 }
 
 .article-right__btn-active {
   background-color: #036FC7;
+}
+
+.article-right__buttons--right-btn,
+.article-right__buttons--left-btn {
+  position: relative;
+  outline: none;
+}
+
+.article-right__buttons--right-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(-50% - 4px);
+  top: -100%;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.article-right__buttons--left-btn::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: calc(-50% - 4px);
+  top: -100%;
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  border-radius: 50%;
+}
+
+.article-right__buttons--right-btn:focus,
+.article-right__buttons--left-btn:focus {
+  outline: 5px solid #FFDE79;
+}
+
+.article-right__item--user-2 {
+  display: none;
+}
+
+.article-right--open .article-right__item--user-1 {
+  display: none;
+}
+
+.article-right--open .article-right__item--user-2 {
+  display: block;
 }
 
 @media only screen and (max-width: 612px) {
