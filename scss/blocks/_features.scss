@@ -5,11 +5,20 @@
   margin-bottom: 143px;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .features__buttons {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media only screen and (max-width: 331px) {
 
   .features__buttons {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
   .features {
     margin-bottom: 100px;

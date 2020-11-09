@@ -1,0 +1,17 @@
+
+.article-left__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.article-left {
+  max-width: 410px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .article-left {
+    max-width: 100%;
+  }
+}

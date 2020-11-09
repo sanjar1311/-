@@ -32,12 +32,23 @@
   background-image: url("../img/hero-bg.png");
   background-position: center center;
   background-repeat: no-repeat;
+  background-size: contain;
   display: block;
 }
 
 @media only screen and (max-width: 768px) {
   .hero {
-    padding: 150px 0;
+    padding: 150px 0 0 0;
+  }
+
+  .hero__img {
+    height: 350px;
+    background-position: center top;
+  }
+  .hero__title {
+    max-width: 100%;
+    font-size: 32px;
+    line-height: 48px;
   }
 }
 
@@ -47,6 +58,7 @@
     max-width: 100%;
     font-size: 24px;
     line-height: 30px;
+    padding-bottom: 0;
   }
 }
 
@@ -55,6 +67,7 @@
   .hero__buttons {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 }
 

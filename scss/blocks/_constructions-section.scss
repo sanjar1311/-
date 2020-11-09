@@ -10,7 +10,7 @@
   background-color: #F6F8F9;
   padding: 40px;
 }
-.constructions-section__construction__text {
+.constructions-section__text {
   display: flex;
   align-items: center;
   color: $black;
@@ -21,14 +21,15 @@
   font-weight: 400;
 }
 
-.constructions-section__construction__text::before {
+.constructions-section__text::before {
   content: "";
   display: block;
-  min-width: 38px;
+  width: 38px;
   height: 36px;
-  background-image: url("../img/constructions-section__construction-icon.svg");
+  background-image: url("../img/constructions-icon.svg");
   background-repeat: no-repeat;
   background-position: center center;
+  background-size: contain;
   margin-right: 27px;
 }
 
@@ -38,12 +39,12 @@
     flex-direction: column;
     justify-content: center;
   }
-  .constructions-section__construction__text {
+  .constructions-section__text {
     flex-direction: column;
     text-align: center;
     margin-bottom: 30px;
   }
-  .constructions-section__construction__text::before {
+  .constructions-section__text::before {
     margin-bottom: 15px;
     margin-right: 0;
   }
@@ -51,11 +52,11 @@
 
 @media only screen and (max-width: 400px) {
 
-  .constructions-section__construction__text {
+  .constructions-section__text {
     font-size: 24px;
     line-height: 30px;
   }
-  .constructions-section__construction__text {
+  .constructions-section__text {
     font-size: 16px;
     line-height: 24px;
   }

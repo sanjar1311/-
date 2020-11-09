@@ -1,0 +1,76 @@
+.article-info {
+  position: relative;
+}
+
+.article-info__heading {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: $black;
+}
+
+.article-info__text {
+  font-weight: 400;
+  line-height: 24px;
+  color: $grey;
+  font-size: 16px;
+}
+
+.article-info::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -64px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.article-info--awards::before {
+  background-image: url("../img/awards.svg");
+}
+
+.article-info--potential::before {
+  background-image: url("../img/potential.svg");
+}
+
+.article-info--market::before {
+  background-image: url("../img/market.svg");
+}
+
+.article-info--safe::before {
+  background-image: url("../img/safe.svg");
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .article-info {
+    margin-bottom: 80px;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:first-child {
+      margin-top: 30px;
+    }
+  }
+
+  .article-info__heading {
+    text-align: center;
+  }
+
+  .article-info__text {
+    text-align: center;
+  }
+
+  .article-info::before {
+    top: -48px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

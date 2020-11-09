@@ -20,6 +20,11 @@
   .transaction__container {
     flex-direction: column;
   }
+
+  .transaction__buttons {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 329px) {

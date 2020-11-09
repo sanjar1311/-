@@ -1,0 +1,130 @@
+.article__article-right {
+  position: relative;
+  background-color: #F6F8F9;
+}
+
+.article-right__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 60px 90px;
+  margin-left: auto;
+  background-image: url("../img/blockquote.svg");
+  background-repeat: no-repeat;
+  background-position: left 10% top 10%;
+}
+
+.article-right__blockquote {
+  font-size: 30px;
+  line-height: 48px;
+  color: $black;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 28px;
+}
+
+.article-right__user-info {
+  position: relative;
+}
+
+.article-right__user-info::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-image: url("../img/user.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.article-right__user-name {
+  font-weight: 500;
+  color: $black;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  margin-bottom: 1px;
+  margin-left: 56px;
+}
+
+.article-right__user-profession {
+  font-weight: 400;
+  color: $grey;
+  font-size: 15px;
+  margin: 0;
+  margin-left: 56px;
+}
+
+.article-right__buttons {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgba(3, 111, 199, 0.2);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.article-right__buttons--left-btn {
+  position: absolute;
+  bottom: calc(3%);
+  left: calc(15% + 5px);
+  z-index: 10;
+}
+
+.article-right__buttons--right-btn {
+  position: absolute;
+  bottom: calc(3%);
+  left: calc(15% + 21px);
+}
+
+.article-right__btn-active {
+  background-color: #036FC7;
+}
+
+ @media only screen and(max-width:612px) {
+
+  .article-right__blockquote {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media only screen and(max-width:534px) {
+
+  .article-right__blockquote {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .article-right__user-profession {
+    font-size: 14px;
+  }
+}
+
+@media only screen and(max-width:406px) {
+
+  .article-right__list {
+    padding: 40px 50px;
+  }
+}
+
+@media only screen and(max-width:406px) {
+
+  .article-right__list {
+    padding: 20px 30px;
+  }
+
+  .article-right__blockquote {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .article-right__user-profession {
+    font-size: 13px;
+  }
+}
