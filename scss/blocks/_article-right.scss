@@ -152,6 +152,17 @@
   display: block;
 }
 
+@media only screen and (max-width: 768px) {
+
+  .article-right__buttons--left-btn {
+    bottom: 10%;
+  }
+
+  .article-right__buttons--right-btn {
+    bottom: 10%;
+  }
+}
+
 
  @media only screen and(max-width:612px) {
 

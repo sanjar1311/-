@@ -1841,6 +1841,8 @@ img {
 .feature-item__heading::before {
   content: "";
   display: block;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
   width: 10px;
   height: 10px;
   background-color: #fff;
@@ -2445,6 +2447,15 @@ img {
 
 .article-right--open .article-right__item--user-2 {
   display: block;
+}
+
+@media only screen and (max-width: 768px) {
+  .article-right__buttons--left-btn {
+    bottom: 10%;
+  }
+  .article-right__buttons--right-btn {
+    bottom: 10%;
+  }
 }
 
 @media only screen and (max-width: 612px) {
