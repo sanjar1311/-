@@ -20,7 +20,7 @@
 .feature-item__heading::before {
   content: "";
   display: block;
-  flex-shrink: 1;
+  flex-shrink: 0;
   width: 10px;
   height: 10px;
   background-color: #fff;
