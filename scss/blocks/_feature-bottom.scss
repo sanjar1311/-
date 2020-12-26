@@ -5,6 +5,17 @@
   padding: 0;
 }
 
+.site-footer__footer-bottom {
+  color: $grey;
+
+  &:hover {
+    color: $grey;
+  }
+  &:active {
+    opacity: 1;
+  }
+}
+
 @media only screen and (max-width:768px) {
 
   .feature-bottom__list {

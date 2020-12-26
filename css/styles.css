@@ -1861,6 +1861,18 @@ img {
   padding: 0;
 }
 
+.site-footer__footer-bottom {
+  color: #72787D;
+}
+
+.site-footer__footer-bottom:hover {
+  color: #72787D;
+}
+
+.site-footer__footer-bottom:active {
+  opacity: 1;
+}
+
 @media only screen and (max-width: 768px) {
   .feature-bottom__list {
     -webkit-box-orient: vertical;
